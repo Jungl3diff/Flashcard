@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <meta
+        name="description"
+        content="Teste seus conhecimentos identificando se afirmações e notícias são verdadeiras ou falsas e aprenda conceitos básicos de Flexbox."
+    >
+
+    <meta
+        name="theme-color"
+        content="#08070a"
+    >
+
+    <title>Verdadeira ou Falsa? — Flashcards</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <script
+        src="script.js"
+        defer
+    ></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container site-header__content">
+
+            <div class="site-header__brand">
+                <p class="eyebrow">Flashcards de conhecimento</p>
+
+                <h1>Verdadeira ou Falsa?</h1>
+            </div>
+
+            <div class="site-header__description">
+                <p class="subtitle">
+                    Avalie cada afirmação e descubra se a informação
+                    apresentada é verdadeira ou falsa.
+                </p>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main class="main-content">
+
+        <!-- ==================================================
+             SEÇÃO: FLEXBOX
+        =================================================== -->
+
+        <section
+            class="flexbox-section"
+            aria-labelledby="flexbox-title"
+        >
+
+            <div class="section-heading">
+
+                <p class="section-heading__eyebrow">
+                    Faça como eu fiz
+                </p>
+
+                <h2 id="flexbox-title">
+                    Organizando elementos com Flexbox
+                </h2>
+
+                <p>
+                    O Flexbox permite organizar elementos em uma dimensão,
+                    controlando alinhamento, espaçamento e distribuição
+                    dos elementos dentro de um container.
+                </p>
+
+            </div>
+
+
+            <!-- Exemplo prático de cabeçalho alinhado -->
+
+            <div class="flexbox-demo">
+
+                <div class="flexbox-demo__header">
+
+                    <div class="flexbox-demo__brand">
+                        <span class="flexbox-demo__logo">
+                            VF
+                        </span>
+
+                        <div>
+                            <strong>
+                                Cabeçalho alinhado
+                            </strong>
+
+                            <span>
+                                Exemplo com Flexbox
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <nav
+                        class="flexbox-demo__navigation"
+                        aria-label="Exemplo de navegação"
+                    >
+                        <a href="#flashcards-title">
+                            Flashcards
+                        </a>
+
+                        <a href="#flexbox-concepts">
+                            Conceitos
+                        </a>
+                    </nav>
+
+                </div>
+
+
+                <div class="flexbox-demo__code">
+
+                    <span class="code-selector">
+                        .cabecalho
+                    </span>
+
+                    <span>{</span>
+
+                    <span class="code-property">
+                        display:
+                        <strong>flex</strong>;
+                    </span>
+
+                    <span class="code-property">
+                        align-items:
+                        <strong>center</strong>;
+                    </span>
+
+                    <span class="code-property">
+                        justify-content:
+                        <strong>space-between</strong>;
+                    </span>
+
+                    <span class="code-property">
+                        gap:
+                        <strong>1rem</strong>;
+                    </span>
+
+                    <span>}</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Conceitos -->
+
+            <div
+                class="flexbox-concepts"
+                id="flexbox-concepts"
+            >
+
+                <div class="section-heading section-heading--small">
+
+                    <p class="section-heading__eyebrow">
+                        Conceitos de Flexbox
+                    </p>
+
+                    <h3>
+                        Propriedades utilizadas
+                    </h3>
+
+                </div>
+
+
+                <div class="concepts-grid">
+
+                    <article class="concept-card">
+
+                        <span class="concept-card__number">
+                            01
+                        </span>
+
+                        <h4>
+                            display: flex
+                        </h4>
+
+                        <p>
+                            Transforma o elemento em um container
+                            Flexbox e permite organizar seus filhos
+                            de maneira flexível.
+                        </p>
+
+                    </article>
+
+
+                    <article class="concept-card">
+
+                        <span class="concept-card__number">
+                            02
+                        </span>
+
+                        <h4>
+                            align-items
+                        </h4>
+
+                        <p>
+                            Controla o alinhamento dos elementos
+                            no eixo transversal do container.
+                        </p>
+
+                    </article>
+
+
+                    <article class="concept-card">
+
+                        <span class="concept-card__number">
+                            03
+                        </span>
+
+                        <h4>
+                            justify-content
+                        </h4>
+
+                        <p>
+                            Controla como os elementos são
+                            distribuídos no eixo principal.
+                        </p>
+
+                    </article>
+
+
+                    <article class="concept-card">
+
+                        <span class="concept-card__number">
+                            04
+                        </span>
+
+                        <h4>
+                            gap
+                        </h4>
+
+                        <p>
+                            Define o espaço entre os elementos
+                            sem depender de margens individuais.
+                        </p>
+
+                    </article>
+
+
+                    <article class="concept-card">
+
+                        <span class="concept-card__number">
+                            05
+                        </span>
+
+                        <h4>
+                            flex-wrap
+                        </h4>
+
+                        <p>
+                            Permite que os elementos passem para
+                            outra linha quando o espaço disponível
+                            não for suficiente.
+                        </p>
+
+                    </article>
+
+
+                    <article class="concept-card">
+
+                        <span class="concept-card__number">
+                            06
+                        </span>
+
+                        <h4>
+                            flex-direction
+                        </h4>
+
+                        <p>
+                            Define a direção do eixo principal,
+                            como linha ou coluna.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             FLASHCARDS
+        =================================================== -->
+
+        <section
+            class="flashcards"
+            aria-labelledby="flashcards-title"
+        >
+
+            <h2
+                id="flashcards-title"
+                class="sr-only"
+            >
+                Flashcard atual
+            </h2>
+
+
+            <article
+                class="flashcard"
+                id="flashcard"
+            >
+
+                <button
+                    class="flashcard__trigger"
+                    id="flashcard-trigger"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="flashcard-answer"
+                >
+
+                    <span class="flashcard__content">
+
+                        <span
+                            class="flashcard__category"
+                            id="card-category"
+                        >
+                            Notícias
+                        </span>
+
+                        <span
+                            class="flashcard__question"
+                            id="card-question"
+                        >
+                            Carregando notícia...
+                        </span>
+
+                        <span class="flashcard__instruction">
+                            Clique para revelar a resposta.
+                        </span>
+
+                    </span>
+
+                </button>
+
+
+                <div
+                    class="flashcard__answer"
+                    id="flashcard-answer"
+                    aria-live="polite"
+                    hidden
+                >
+
+                    <span
+                        class="flashcard__result"
+                        id="card-result"
+                    ></span>
+
+                    <h3
+                        class="flashcard__answer-title"
+                        id="card-answer-title"
+                    >
+                        Confira a informação
+                    </h3>
+
+                    <p
+                        class="flashcard__explanation"
+                        id="card-explanation"
+                    >
+                        Carregando explicação...
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <nav
+                class="card-navigation"
+                aria-label="Navegação dos flashcards"
+            >
+
+                <button
+                    id="anterior"
+                    class="card-navigation__button"
+                    type="button"
+                    aria-label="Ver flashcard anterior"
+                >
+                    <span aria-hidden="true">←</span>
+                    Anterior
+                </button>
+
+
+                <p
+                    class="card-navigation__counter"
+                    id="contador"
+                    aria-live="polite"
+                    aria-atomic="true"
+                >
+                    <span id="current-card">1</span>
+                    <span aria-hidden="true"> / </span>
+                    <span id="total-cards">0</span>
+                </p>
+
+
+                <button
+                    id="proximo"
+                    class="card-navigation__button"
+                    type="button"
+                    aria-label="Ver próximo flashcard"
+                >
+                    Próximo
+                    <span aria-hidden="true">→</span>
+                </button>
+
+            </nav>
+
+        </section>
+
+    </main>
+
+
+   <footer class="site-footer">
+
+    <div class="container">
+
+        <p>
+            © 2026 — Flashcards Verdadeira ou Falso
+        </p>
+
+        <div class="site-footer__sources">
+            <p>Fontes:</p>
+
+            <ul>
+                <li>
+                    <a
+                        href="https://g1.globo.com/meio-ambiente/noticia/2026/08/29/el-nino-brasil-deve-ter-ao-menos-seis-ondas-de-calor-ate-o-fim-do-ano.ghtm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        G1 — El Niño e as ondas de calor no Brasil
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://www.aosfatos.org/noticias/numero-de-focos-de-queimadas-na-amazonia-em-2019-nao-e-o-menor-desde-1998/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Aos Fatos — Número de focos de queimadas na Amazônia em 2019
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</footer>
